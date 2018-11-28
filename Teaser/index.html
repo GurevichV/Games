@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var body=["nose is","ears are","heands are","legs are"];
+    // var adjective=["long","big","flabby","pimply"];
+    // var animals=["a hedgehog","an anteater","an elephant","a snake"];
+    // var randomBody = body[Math.floor(body.length * Math.random())];
+    // var randomAdjective = adjective[Math.floor(adjective.length * Math.random())];
+    // var randomAnimals = animals[Math.floor(animals.length * Math.random())];
+    // alert("Your " + randomBody + " " + randomAdjective + " like " + randomAnimals);
+    
+    //РЕШЕНИЕ ЭТОЙ ЗАДАЧИ С ПОМОЩЬЮ ФУНКЦИЙ 1
+    // var body=["nose is","ears are","heands are","legs are"];
+    // var adjective=["long","big","flabby","pimply"];
+    // var animals=["a hedgehog","an anteater","an elephant","a snake"];
+    // var pickRandomeWord = function (words){
+    //   return words[Math.floor(words.length * Math.random())];
+    // };
+    // var randomString="Your " + pickRandomeWord(body) + " " + pickRandomeWord(adjective) + " like " + pickRandomeWord(animals) ;
+    // alert(randomString);
+
+    //РЕШЕНИЕ ЭТОЙ ЗАДАЧИ С ПОМОЩЬЮ ФУНКЦИЙ 2
+    var generator= function(){
+    var body=["nose is","ears are","heands are","legs are"];
+    var adjective=["long","big","flabby","pimply"];
+    var animals=["a hedgehog","an anteater","an elephant","a snake"];
+    var pickRandomeWord = function (words){
+      return words[Math.floor(words.length * Math.random())];
+    };
+    var randomString="Your " + pickRandomeWord(body) + " " + pickRandomeWord(adjective) + " like " + pickRandomeWord(animals) ;
+    return alert(randomString);
+  }
+   
+   generator();
+
+
+    </script>
+</body>
+</html>
